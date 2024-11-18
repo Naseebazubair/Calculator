@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+</head>
+<body>
+   <div class="content">
+        <div class="calculator">
+            <input id="txt" type="text" placeholder="0" readonly>
+
+          <table class="table">
+            <tr class="rows">
+                <td><button onclick="calClear()" class="btn"><span class="ac">AC</span></button></td>
+                <td><button onclick="displayContent('/')" class="btn"><span class="ac">/</span></button></td>
+                <td><button onclick="displayContent('-')" class="btn"><span class="ac">-</span></button></td>
+                <td><button onclick="displayContent('+')" class="btn"><span class="ac">+</span></button></td>
+            </tr>
+            <tr class="rows">
+                <td><button onclick="calOutput()" class="btn"><span class="ac">=</span></button></td>
+                <td><button  onclick="displayContent('9')" class="btn">9</button></td>
+                <td><button onclick="displayContent('8')" class="btn">8</td>
+                <td><button  onclick="displayContent('7')" class="btn">7</button></button></td>
+            </tr>
+            <tr class="rows">
+                <td><button onclick="displayContent('*')" class="btn"><span class="ac">X</span></button></td>
+                <td><button onclick="displayContent('6')" class="btn">6</button></td>
+                <td><button onclick="displayContent('5')" class="btn">5</button></td>
+                <td><button onclick="displayContent('4')" class="btn">4</button></td>
+            </tr>
+            <tr class="rows">
+                <td><button onclick="remove()" class="btn"><span class="ac">&#9003</span></button></td>
+                <td><button onclick="displayContent('3')" class="btn">3</button></td>
+                <td><button onclick="displayContent('2')" class="btn">2</button></td>
+                <td><button onclick="displayContent('1')" class="btn">1</button></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button  onclick="displayContent('0')"  class="btn" >0</button></td>
+
+            </tr>
+          </table>
+        </div>
+   </div>
+</body>
+<script src="./main.js"></script>
+</html>
